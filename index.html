@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daniel Bartolomei</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      color: white;
+      overflow: hidden;
+    }
+
+    /* Background image */
+    .background {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: url("bartolomei-website-background.png") no-repeat center center/cover;
+      filter: brightness(0.6);
+      z-index: -1;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Top nav */
+    .nav {
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    /* Center content */
+    .center {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .center h1 {
+      font-size: 40px;
+      font-weight: 400;
+      margin-bottom: 25px;
+      max-width: 600px;
+      line-height: 1.3;
+    }
+
+    .button {
+      padding: 14px 26px;
+      border: 1px solid white;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.25s ease;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+    }
+
+    .button:hover {
+      background: white;
+      color: black;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="background"></div>
+
+  <!-- Name top left -->
+  <div class="nav">
+    Daniel Bartolomei
+  </div>
+
+  <!-- Center content -->
+  <div class="center">
+    <h1>Let’s work together to meet your marketing needs.</h1>
+    <a class="button" href="mailto:daniel@danielbartolomei.com">
+      Email Daniel
+    </a>
+  </div>
+
+</body>
+</html>
